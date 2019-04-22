@@ -1,0 +1,169 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 16px;
+  color: #3d383d;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+li {
+  list-style: none;
+}
+
+img {
+  min-width: 100%;
+  height: auto;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  /* for edge cases: */
+  width: 100%;
+  max-width: 100%;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.pl-15 {
+  padding-left: 15px;
+}
+
+.pr-15 {
+  padding-right: 15px;
+}
+
+.pt-15 {
+  padding-top: 15px;
+}
+
+.pb-15 {
+  padding-bottom: 15px;
+}
+
+.p-15 {
+  padding: 15px;
+}
+
+.app--container {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #131314;
+}
+
+.app--container h3 {
+  padding-bottom: 15px;
+}
+
+.app--wrapper {
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 8px;
+  height: 60vh;
+  width: 400px;
+  -webkit-box-shadow: "";
+          box-shadow: "";
+}
+
+.app--wrapper .image {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 100px;
+}
+
+.app--wrapper .app--options ul {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.app--wrapper .app--options ul li {
+  padding: 15px;
+}
+
+.app--wrapper .app--options ul li a {
+  font-size: 14px;
+  color: #3d383d;
+}
+
+.app--form input {
+  width: 100%;
+  padding: 12px 40px;
+  margin: 8px 0;
+}
+
+button {
+  background-color: #666d67;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  padding: 15px 120px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+/*# sourceMappingURL=app.css.map */

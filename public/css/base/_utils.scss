@@ -1,0 +1,63 @@
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: $p-15;
+    padding-left: $p-15;
+    /* for edge cases: */
+    width: 100%;
+    max-width: 100%;
+  }
+
+  @media (min-width: 768px) {
+    .container{
+      width: 750px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .container{
+      width: 970px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .container{
+      width: 1170px;
+    }
+  }
+
+// to uppercase
+  .uppercase{
+    text-transform: uppercase;
+  }
+
+// padding left 15px
+
+.pl-15{
+  padding-left: $p-15;
+}
+
+// padding right 15px
+
+.pr-15{
+  padding-right: $p-15;
+}
+
+// padding top 15px
+
+.pt-15{
+  padding-top: $p-15;
+}
+
+// padding left 15px
+
+.pb-15{
+  padding-bottom: $p-15;
+}
+  
+// padding all 15px
+
+.p-15{
+  padding: $p-15;
+}
+  

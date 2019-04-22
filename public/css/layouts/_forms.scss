@@ -1,0 +1,46 @@
+// app sign-app layout
+
+.app--container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: rgb(19, 19, 20);
+
+    h3{
+        padding-bottom: $p-15;
+    }
+}
+
+.app--wrapper{
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 8px;
+    height: 60vh;
+    width: 400px;
+    box-shadow: "";
+
+    .image {
+        padding-top: $p-15;
+        padding-bottom: $p-15;
+        width:100px;
+    }
+
+    .app--options ul{
+        display: inline-flex;
+
+        li{
+            padding: $p-15;
+
+            a{
+                font-size: 14px;
+                color:$text-primary;
+                // text-decoration: none;
+            }
+        }
+    }
+}
