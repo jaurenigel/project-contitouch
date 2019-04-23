@@ -1,6 +1,97 @@
 // importing scss files
-@import 'variables/variables';
-@import 'base/base';
-@import 'layouts/layout';
-@import 'components/components';
-@import 'mixins/mixins';
+@import "variables/variables";
+@import "base/base";
+@import "mixins/mixins";
+
+// app sign-app layout
+
+.app--container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  // background: rgb(19, 19, 20);
+  background: rgb(79, 77, 77);
+  background: linear-gradient(
+    220deg,
+    rgba(79, 77, 77, 1) 0%,
+    rgba(105, 96, 96, 1) 50%,
+    rgba(65, 64, 62, 1) 100%
+  );
+
+  h3 {
+    padding-bottom: $p-15;
+  }
+}
+
+.app--wrapper {
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 8px;
+  height: 65vh;
+  width: 400px;
+  box-shadow: "";
+
+  .image {
+    padding-top: $p-15;
+    padding-bottom: $p-15;
+    width: 100px;
+  }
+
+  .app--options ul {
+    display: inline-flex;
+
+    li {
+      padding: $p-15;
+
+      a {
+        font-size: 14px;
+        color: $text-primary;
+        // text-decoration: none;
+      }
+    }
+  }
+}
+
+.app--form {
+  input {
+    width: 100%;
+    padding: 12px 40px;
+    margin: 8px 0;
+  }
+  select {
+    padding: 5px 58px;
+    margin: 0;
+    // border-radius:4px;
+    // box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    color:#888;
+    display: inline-block;
+    cursor:pointer;
+  }
+
+  span{
+    font-size: 15px;
+    font-weight: 200;
+    margin-left: 3px;
+  }
+}
+// button
+
+button {
+  // background-color: rgb(102, 109, 103);
+  background-color: #4f4d4d;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  padding: 15px 120px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+// select
+

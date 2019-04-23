@@ -2,13 +2,15 @@
 const express = require("express");
 const expressLayouts = require("express-ejs-layouts");
 const mongoose = require('mongoose');
+const session = require('express-session');
 const passport = require('passport');
 
 const app = express();
 
-// passport config
+// passport config for admin
 
 require('./config/passport') (passport);
+
 
 // Database config
 
@@ -33,16 +35,25 @@ app.set('view engine', 'ejs');
 
 app.use(express.urlencoded( {extended: false} ));
 
+// Express session
+app.use(
+    session({
+      secret: 'secret',
+      resave: true,
+      saveUninitialized: true
+    })
+  );
+
 // Passport
 
 app.use(passport.initialize());
 app.use(passport.session());
 
+
 // Routes
 
 app.use('/', require('./routes/index'));
 app.use('/admin', require('./routes/admin'));
-app.use('/supplier', require('./routes/supplier'));
 
 const PORT = process.env.PORT || 3000;
 

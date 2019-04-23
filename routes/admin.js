@@ -19,7 +19,7 @@ router.get("/register", (req, res) => {
 
 // register user handler
 router.post("/register", (req, res) => {
-  const { name, email, password, password2 } = req.body;
+  const { name, email, password, type } = req.body;
 
   // check if user exist
   Admin.findOne({ email: email }).then(user => {
@@ -30,6 +30,7 @@ router.post("/register", (req, res) => {
         name,
         email,
         password,
+        type,
       });
 
       // hashing password

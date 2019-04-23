@@ -5,6 +5,7 @@ const bcrypt = require('bcryptjs');
 // Load Admin model
 const Admin = require('../models/Admin');
 
+
 module.exports = function (passport) {
     passport.use(
         new LocalStrategy({ usernameField: 'email'}, (email, password, done) =>{
@@ -40,3 +41,4 @@ module.exports = function (passport) {
         });
     });
 }
+
