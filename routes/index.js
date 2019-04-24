@@ -7,12 +7,16 @@ router.get('/', (req, res) => {
     res.redirect('/admin/login')
 });
 
-router.get('/supplier-dashboard', ensureAuthenticated, (req, res) => {
-    res.render('supplier_dashboard')
+router.get('/test', (req, res) => {
+    res.render('dashboard')
 });
 
 router.get('/admin-dashboard', ensureAuthenticated , (req, res) => {
-    res.render('dashboard')
+    res.render('dashboard', {
+        name: req.user.name,
+        type: req.user.type
+    })
+    
 });
 
 module.exports = router;

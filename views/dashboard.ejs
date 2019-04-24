@@ -1,2 +1,148 @@
-<h1>Welcome To Admin Dashboard</h1>
-<a href="/admin/logout">Logout</a>
+<!-- <h1>Welcome To Admin Dashboard</h1> -->
+
+<div class="dashboard">
+  <header>
+    <div>
+      <a href="#" class="uppercase btn-link btn"
+        ><i class="fas fa-plus icon"></i>Create Request</a
+      >
+    </div>
+    <div class="header">
+      <span><%= name %></span>
+      <a class="uppercase logout-link" href="/admin/logout">Logout</a>
+    </div>
+  </header>
+  <aside>
+    <div class="brand">
+      <h1>Conti-<span>Procure</span></h1>
+    </div>
+    <div class="nav">
+      <% if(type === "supplier"){ %>
+      <ul>
+        <li>
+          <i class="fas fa-tachometer-alt icon"></i><a href="#">Dashboard</a>
+        </li>
+        <li>
+          <i class="fas fa-clipboard-list  icon"></i
+          ><a href="#">Request Queue</a>
+        </li>
+        <li>
+          <i class="fas fa-check-circle  icon"></i
+          ><a href="#">Approved Request</a>
+        </li>
+        <li>
+                <i class="fas fa-times-circle  icon"></i
+                ><a href="#">Declined Request</a>
+              </li>
+        <li>
+          <i class="fas fa-quote-right  icon"></i><a href="#">Quotations</a>
+        </li>
+      </ul>
+      <% } else{ %>
+      <ul>
+        <li>
+          <i class="fas fa-tachometer-alt icon"></i><a href="#">Dashboard</a>
+        </li>
+        <li>
+          <i class="fas fa-clipboard-list  icon"></i
+          ><a href="#">Request Queue</a>
+        </li>
+        <li>
+          <i class="fas fa-check-circle  icon"></i
+          ><a href="#">Approved Request</a>
+        </li>
+        <li>
+          <i class="fas fa-quote-right  icon"></i><a href="#">Quotations</a>
+        </li>
+      </ul>
+      <% } %>
+    </div>
+  </aside>
+  <main>
+    <!-- card -->
+    <% if(type === "supplier"){ %>
+        <div class="card-container p-15">
+                <div class="card">
+                  <div class="title">
+                    <h3>Approved Requests</h3>
+                  </div>
+                  <div class="number icon">
+                    <i class="fas fa-check-circle  icon"></i>
+                    <p>3</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="title">
+                    <h3>Declined Queue</h3>
+                  </div>
+                  <div class="number icon">
+                    <i class="fas fa-times-circle  icon"></i>
+                    <p>0</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="title">
+                    <h3>Quotations</h3>
+                  </div>
+                  <div class="number icon">
+                    <i class="fas fa-quote-right  icon"></i>
+                    <p>7</p>
+                  </div>
+                </div>
+              </div>
+    
+    <% } else{ %>  
+        <div class="card-container p-15">
+                <div class="card">
+                  <div class="title">
+                    <h3>Approved Requests</h3>
+                  </div>
+                  <div class="number icon">
+                    <i class="fas fa-check-circle  icon"></i>
+                    <p>3</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="title">
+                    <h3>Request Queue</h3>
+                  </div>
+                  <div class="number icon">
+                    <i class="fas fa-clipboard-list  icon"></i>
+                    <p>3</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="title">
+                    <h3>Quotations</h3>
+                  </div>
+                  <div class="number icon">
+                    <i class="fas fa-quote-right  icon"></i>
+                    <p>3</p>
+                  </div>
+                </div>
+              </div>
+    
+    <% } %>
+  
+    <!-- data -->
+    <section class="data">
+      <div class="header">
+        <div class="title">
+          <h3>RFQ Number</h3>
+        </div>
+        <div class="title">
+          <h3>RFQ Description</h3>
+        </div>
+        <div class="title">
+          <h3>RFQ Date</h3>
+        </div>
+        <div class="title">
+          <h3>RFQ Status</h3>
+        </div>
+        <div class="title">
+          <h3>RFQ Amount</h3>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
