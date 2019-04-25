@@ -90,6 +90,26 @@ img {
   padding: 15px;
 }
 
+.ml-15 {
+  margin-left: 15px;
+}
+
+.mr-15 {
+  margin-right: 15px;
+}
+
+.mt-15 {
+  margin-top: 15px;
+}
+
+.mb-15 {
+  margin-bottom: 15px;
+}
+
+.m-15 {
+  margin: 15px;
+}
+
 .app--container {
   height: 100vh;
   display: -webkit-box;
@@ -391,5 +411,47 @@ section.data .header {
 
 section.data h3 {
   font-size: 14px;
+}
+
+.rfq-form-1 .red {
+  background-color: #fa0b0b;
+}
+
+.rfq-form-1 .header {
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #fff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 15px;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.rfq-form-1 h3 {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.rfq-form-1 .form label {
+  font-size: 13px;
+  color: #fff;
+}
+
+.rfq-form-1 .form-grid {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 15px;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+.rfq-form-1 input, .rfq-form-1 textarea {
+  width: 100%;
+  padding: 12px 30px;
+  margin: 8px 0;
 }
 /*# sourceMappingURL=app.css.map */

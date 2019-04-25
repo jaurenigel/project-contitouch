@@ -34,6 +34,8 @@ app.set('view engine', 'ejs');
 // Bodyparser
 
 app.use(express.urlencoded( {extended: false} ));
+app.use(express.json());
+
 
 // Express session
 app.use(
@@ -54,6 +56,7 @@ app.use(passport.session());
 
 app.use('/', require('./routes/index'));
 app.use('/admin', require('./routes/admin'));
+app.use('/api', require('./routes/api/quote'));
 
 const PORT = process.env.PORT || 3000;
 
